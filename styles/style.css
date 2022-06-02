@@ -1,0 +1,365 @@
+                    /* Google fonttien importtaus */
+                    
+                    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Signika+Negative&family=Source+Sans+Pro&display=swap');
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    html {
+                        scroll-behavior: smooth;
+                        scroll-padding-top: 2.1em;
+                        background-image: url(../img/html_background2_smol2.png);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-attachment: fixed;
+                    }
+                    
+                    body {
+                        width: auto;
+                        margin: 0;
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 1.1em;
+                    }
+                    
+                    a {
+                        color: black;
+                    }
+                    
+                    a:hover {
+                        color: #7a7a7a
+                    }
+                    /* Headerin asetukset alkaa tästä */
+                    
+                    .header {
+                        /* Header kuvan lähde, rojalti vapaa käyttöön https://unsplash.com/ */
+                        background-image: url(../img/headerfull.jpg);
+                        width: auto;
+                        background-attachment: fixed;
+                        background-size: cover;
+                        background-position: center;
+                        font-size: 2.1875em;
+                        height: 15.25em;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                    .header_text {
+                        display: flex;
+                        flex-direction: row;
+                        color: rgb(255, 255, 255);
+                        justify-content: center;
+                        text-align: center;
+                        padding: 1em;
+                        text-shadow: 0 0 0.1em black;
+                    }
+                    
+                    .header_text_h1 {
+                        font-family: 'Bebas Neue', sans-serif;
+                    }
+                    /* Navigoinnin asetukset alkaa tästä */
+                    
+                    .navbar_desk {
+                        display: flex;
+                        flex-direction: row;
+                        background-color: rgba(0, 0, 0, 0.562);
+                        justify-content: center;
+                        margin-top: auto;
+                    }
+                    /* Navigoinnin linkin tyylitykset */
+                    
+                    .navbar_desk a {
+                        color: white;
+                        padding: 0.2em 1.25em;
+                        font-size: 0.7em;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    /* navigoinnin linkkien ylivienti tyylitys */
+                    
+                    .navbar_desk a:hover {
+                        background-color: rgb(0, 0, 0);
+                        color: rgb(255, 255, 255);
+                    }
+                    /* MOBIILI NAVIGAATION TYYLITTELYT */
+                    
+                    .navbar_mobile {
+                        display: flex;
+                        flex-direction: row;
+                        background-color: rgba(0, 0, 0, 0.788);
+                        justify-content: center;
+                        margin-top: 0;
+                        position: fixed;
+                        width: 100%;
+                    }
+                    /* Mobiili navigoinnin linkin tyylitykset */
+                    
+                    .navbar_mobile a {
+                        color: white;
+                        padding: 0.2em 1.25em;
+                        font-size: 0.55em;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: center;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    /* Mobiili navigoinnin linkkien ylivienti tyylitys */
+                    
+                    .navbar_mobile a:hover {
+                        background-color: rgb(0, 0, 0);
+                        color: rgb(255, 255, 255);
+                    }
+                    /* Yleistä tietoa ja harrastukset asetukset alkaa tästä */
+                    
+                    .sisalto_mina,
+                    .harrastukset_cont {
+                        display: flex;
+                        flex-direction: row;
+                        background-color: rgb(219, 219, 219);
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        padding: 0.625em;
+                    }
+                    
+                    .mina_vasen {
+                        margin-bottom: 1em;
+                        width: 400px;
+                        text-align: center;
+                    }
+                    
+                    .mina_vasen img {
+                        width: 100%;
+                        max-width: 300px;
+                        height: auto;
+                        border: none;
+                        border-radius: 0.625em;
+                    }
+                    
+                    .mina_oikea {
+                        width: 400px;
+                    }
+                    
+                    .harrastukset {
+                        display: flex;
+                        flex-direction: row;
+                        background-color: rgb(219, 219, 219);
+                        justify-content: center;
+                        max-width: 968px;
+                        flex-wrap: wrap;
+                        padding: 0.625em;
+                    }
+                    
+                    .harrastukset h2 {
+                        font-family: 'Signika Negative', sans-serif;
+                    }
+                    
+                    .harrastukset img {
+                        max-width: 250px;
+                        height: auto;
+                        border: none;
+                        border-radius: 0.625em;
+                    }
+                    
+                    .harrastukset_vasen {
+                        display: flex;
+                        flex-direction: column;
+                        width: 400px;
+                    }
+                    
+                    .harrastukset_oikea {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        padding-left: 150px;
+                        width: 400px;
+                    }
+                    /* Portfolion asetukset alkaa tästä */
+                    
+                    .portfolio {
+                        display: flex;
+                        flex-direction: row;
+                        background-color: rgb(219, 219, 219);
+                        max-width: 968px;
+                        justify-content: space-evenly;
+                        flex-wrap: wrap;
+                        padding: 0.625em;
+                        overflow: hidden;
+                    }
+                    /* Asetetaan viimeisen laatikon jälkeen tyhjä laatikko mikä asettaa viimeisen laatikon vasempaan reunaan
+vaikka justify-content: center on asetetu .portfolio classille */
+                    
+                    .portfolio::after {
+                        content: "";
+                        flex: auto;
+                        flex-basis: 360px;
+                        margin: 0.3em;
+                        flex-grow: 0;
+                    }
+                    
+                    .portfolio_cont {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        background-color: rgb(219, 219, 219);
+                        padding: 0.625em;
+                    }
+                    
+                    .portfolio_laatikko {
+                        display: flex;
+                        flex-wrap: wrap;
+                        background-color: rgb(163, 163, 163);
+                        box-shadow: 0 3px 5px rgb(0 0 0 / 0.2);
+                        width: 360px;
+                        height: auto;
+                        margin: 0.5em;
+                        text-align: center;
+                    }
+                    
+                    .portfolio_laatikko h2 {
+                        margin: 0.2em;
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    
+                    .portfolio_laatikko p {
+                        margin: 0.3em;
+                    }
+                    
+                    .portfolio_laatikko a {
+                        border: none;
+                        outline: 0;
+                        display: inline-block;
+                        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+                        padding: 0.5em;
+                        color: white;
+                        background-color: black;
+                        cursor: pointer;
+                        width: 100%;
+                        height: 54px;
+                        text-decoration: none;
+                    }
+                    
+                    .portfolio_laatikko a:hover {
+                        opacity: 0.8;
+                        text-decoration: none;
+                    }
+                    /* Footerin asetukset alkaa tästä */
+                    
+                    .footer {
+                        background-color: #f1f1f1;
+                        box-shadow: inset 0 7px 9px -7px #000000;
+                        padding: 0.625em;
+                        text-align: center;
+                    }
+                    
+                    .footer a {
+                        text-decoration: none;
+                        font-family: 'Roboto', sans-serif;
+                        color: black;
+                    }
+                    
+                    .footer a:hover {
+                        color: #7a7a7a;
+                    }
+                    /* Välipalkin asetukset alkaa tästä */
+                    
+                    .valipalkki {
+                        display: flex;
+                        flex-direction: column;
+                        background-color: #f1f1f163;
+                        justify-content: flex-end;
+                        flex-wrap: wrap;
+                        margin: 5px 0px 5px 0px;
+                        padding: 1.25em;
+                    }
+                    
+                    .valipalkki h2 {
+                        text-align: center;
+                        color: #ffffff;
+                        text-shadow: 0 0 0.2em rgb(0, 0, 0);
+                        padding: 0;
+                        margin: 0;
+                        font-size: 1.8em;
+                        font-family: 'Bebas Neue', sans-serif;
+                    }
+                    /* Takaisin ylös painikkeen tyylittelyt / asetukset */
+                    
+                    #painike {
+                        /* Normaalisti piilotettuna */
+                        display: none;
+                        /* Painikkeen paikan asetus fixed tilaan */
+                        position: fixed;
+                        /* Painike viedään 20px päähän sivun ala-reunasta */
+                        bottom: 20px;
+                        /* Painike viedään 30px päähän sivun oikeasta reunasta */
+                        right: 30px;
+                        /* z-indexillä saadaan painike pysymään elementtien päällä */
+                        z-index: 99;
+                        /* Reunojen poisto */
+                        border: none;
+                        /* ulkolinjojen poisto */
+                        outline: none;
+                        /* Taustavärin asetus */
+                        background-color: rgba(0, 0, 0, 0.445);
+                        /* Tekstin väri */
+                        color: rgba(255, 255, 255, 0.562);
+                        /* Vaihdetaan hiiren kursori painikkeen päällä */
+                        cursor: pointer;
+                        /* Lisätään padding */
+                        padding: 15px;
+                        /* Reunojen pyöristys */
+                        border-radius: 0.625em;
+                    }
+                    /* Tehdään painikkeeseen nuoli */
+                    
+                    .arrow {
+                        border: solid rgb(255, 255, 255);
+                        border-width: 0 0.1875em 0.1875em 0;
+                        display: inline-block;
+                        padding: 0.1875em;
+                    }
+                    /* Käänneetään nuoli osoittamaan ylöspäin */
+                    
+                    .up {
+                        transform: rotate(-135deg);
+                        transform: rotate(-135deg);
+                    }
+                    /* Vaihdetaan painikkeen väriä kun kursori päällä */
+                    
+                    #painike:hover {
+                        background-color: rgba(0, 0, 0, 0.733);
+                        color: white;
+                    }
+                    /* Mobiili näkymän asetukset */
+                    
+                    @media (max-width: 900px) {
+                        .header {
+                            background-size: auto;
+                            background-position: 55% 50%;
+                        }
+                        /* Piilotetaan työpöytä näkymän navigaatio */
+                        .navbar_desk {
+                            display: none;
+                        }
+                        .harrastukset_oikea,
+                        .harrastukset_vasen {
+                            text-align: center;
+                            width: auto;
+                            padding-left: 0px;
+                        }
+                        p {
+                            text-align: left;
+                        }
+                    }
+                    /* Työpöydän asetukset */
+                    
+                    @media only screen and (min-width: 900px) {
+                        /* Piilotetaan mobiilinäkymän navigaatio */
+                        .navbar_mobile {
+                            display: none;
+                        }
+                        /* Asetetaan painikkeiden scrollauksen pysäytys oikeaan kohtaan osioita */
+                        html {
+                            scroll-padding-top: 0.3em;
+                        }
+                    }
