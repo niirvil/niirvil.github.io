@@ -333,8 +333,8 @@
                                             
                                             @media (max-width: 900px) {
                                                 .header {
-                                                    background-attachment: scroll;
                                                     background-size: auto;
+                                                    background-position: 55% 50%;
                                                 }
                                                 /* Piilotetaan työpöytä näkymän navigaatio */
                                                 .navbar_desk {
