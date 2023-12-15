@@ -3,28 +3,14 @@
                         color: white;
                         font-family: Arial, sans-serif;
                         text-align: center;
-                }
-
-                .fade-in {
-                        opacity: 0;
-                        animation: fade-in 3s ease-in-out forwards;
-                        text-align: center;
-                        font-size: 40px;
-                        font-family: noto sans;
-                        text-shadow: 0 0 5px white;
-                }
-
-                @keyframes fade-in {
-                        0% {
-                                opacity: 0;
-                        }
-                        100% {
-                                opacity: 1;
-                        }
+                        background-image: url(../img/bg_startsite.png);
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-position: center top;
+                        
                 }
                 div.div1 {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;                       
                 }
