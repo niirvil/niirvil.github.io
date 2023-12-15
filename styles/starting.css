@@ -9,8 +9,17 @@
                         background-position: center top;
                         
                 }
-                div.div1 {
+                .flex-container {
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
                         display: flex;
                         align-items: center;
-                        justify-content: center;                       
+                        justify-content: center; 
+                        width: 611px;
+                        height: 902px;
+                }
+                row
+                {
+                        width: 100%;
                 }
