@@ -3,7 +3,7 @@
                         color: white;
                         font-family: Arial, sans-serif;
                         text-align: center;
-                        background-image: url(../img/bg_startsite.png);
+                        background-image: url(/img/bg_startsite.png);
                         background-repeat: no-repeat;
                         background-attachment: fixed;
                         background-position: center top;
