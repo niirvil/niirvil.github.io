@@ -1,17 +1,6 @@
-                body {
-                        background-color: black;
-                        color: white;
-                        font-family: Arial, sans-serif;
-                        text-align: center;
-                        background-image: url(../img/bg_startsite.png);
-                        background-repeat: no-repeat;
-                        background-attachment: fixed;
-                        background-position: center top;
-                }
-
                 .content-box {
-                        flex: 1; /* Added flex property */
-                        max-width: 611px; /* Added max-width property */
+                        flex: 1;
+                        max-width: 611px;
                         height: 100%;
                         margin: 0 auto;
                         position: absolute;
