@@ -7,19 +7,22 @@
                         background-repeat: no-repeat;
                         background-attachment: fixed;
                         background-position: center top;
-                        
                 }
-                .flex-container {
-                        padding: 0;
-                        margin: 0;
-                        list-style: none;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center; 
-                        width: 611px;
-                        height: 902px;
+
+                .content-box {
+                        flex: 1; /* Added flex property */
+                        max-width: 611px; /* Added max-width property */
+                        height: 100%;
+                        margin: 0 auto;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        background-color: rgba(0, 0, 0, 0.555);
                 }
-                row
-                {
-                        width: 100%;
+                .content-box p {
+                        font-size: 20px;
+                        line-height: 1.5;
+                        margin: 0 0 20px;
                 }
+
